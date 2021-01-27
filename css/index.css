@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #100e1d;
+}
+.container{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 3rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 a{
+    color: #fff;
+}
+
+header nav a{
+    color: #fff;
+    margin-left: 1.4rem;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 3rem);
+
+}
+.hero .hero-info{
+    overflow: hidden;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+/**
+
+@keyframes mover{
+    from{
+        transform: translateX(-150%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+**/
+.hero .hero-info > h2{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-name: mover;
+}
+.hero .hero-info .hero-button {
+    border: none;
+    border-radius: .3rem;
+    outline: none;
+    /*
+   background-color: #a26bc1;   
+    */
+    padding: 0.7rem;
+    margin: 2rem 0 0 1rem;
+        transition: all 500ms;
+}
+.hero .hero-info .hero-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.hero .hero-img{
+    width: 40%;
+}
+.hero .hero-img img{
+    width: 100%;
+}
+.portafolio{
+}
+.portafolio > h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.portafolio .cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 300px));
+    grid-auto-rows: 400px;
+    justify-content: center;
+    gap: 2rem;
+}
+.portafolio .cards .card{
+    overflow: hidden;
+    border-radius: .4rem;
+}
+.portafolio .cards .card .card-title{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .4rem;
+}
+.portafolio .cards .card .card-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: .4rem;
+}
+.portafolio .cards .card .card-img img{
+    width: 100%;
+}
+.portafolio .cards .card:hover .card-info{
+    transform: translateY(-85%);
+}
+.portafolio .cards .card .card-info{
+    background-color:  #fff ;
+    height: 100%;
+    padding: .8rem 1rem 0 1rem;
+    transition: all 500ms;
+    border-radius: .4rem;
+}
+.portafolio .cards .card .card-info > p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: .8rem ;
+}
+.portafolio .cards .card .card-info .card-tecnology ul{
+    list-style: none;
+}
+.portafolio .cards .card .card-info .card-tecnology ul li{
+    display: flex;
+    align-items: center;
+}
+.bx{
+    font-size: 2rem;
+}
+.bxl-html5{
+    color:  #eb860e ;
+}
+.bxl-css3{
+    color:  #2c99ef ;
+}
+.bxl-javascript{
+    color:  #dce215;
+}
+.card-bottom{
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .8rem auto 0 auto;
+    color: #fff;
+}
+.card-bottom a{
+      color: #fff;  
+}
+.portafolio .cards .card .card-info .card-description > p{
+    margin-top: .8rem;
+    text-align: center;
+}
