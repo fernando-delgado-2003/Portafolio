@@ -106,18 +106,16 @@ header nav a:hover{
 /** Skills ***/
 
 #habilidades{
-    width: 100%;
+    width: 80%;
     color: #fff;
-    padding: 0 2rem;
+    margin: 0 auto;
     margin-bottom: 3rem;
 }
 #habilidades > h2{
     font-size: 2rem;
 }
 .container-skills{
-    width: 53%;
-    padding: 0 5rem;
-    
+    width: 50%;
 }
 .container-skills .skill{
     padding-left: 3.2rem;
@@ -152,6 +150,9 @@ header nav a:hover{
     color: rgba(255, 255, 255, 0.69);
     margin-bottom: 1rem;
 }
+.container-skills .skill:nth-child(3) > p{
+    margin-bottom: 1.7rem;
+}
 /** barra blanca skill ***/
 .container-skills .skill .container-skill-level{
     width: 450px;
@@ -185,7 +186,7 @@ header nav a:hover{
 /*muestra el porcentaje en numero*/
 .container-skills .skill .container-skill-level .level-percentage {
     position: absolute;
-    top: -35px;
+    top: -28px;
     background-color: #1462f3;
     font-size: .7rem;
     padding: .1rem .5rem;
@@ -213,11 +214,15 @@ header nav a:hover{
 .container-skills .skill .container-skill-level .level-percentage-webpack{
     left: calc(40% - 33.65px);
 }
+.container-skills .skill:nth-child(3) > p{
+    margin-bottom: 1.7rem;
+}
+
 .portafolio > h2{
     color: #fff;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 .portafolio .cards {
     display: grid;
@@ -246,7 +251,7 @@ header nav a:hover{
     width: 100%;
 }
 .portafolio .cards .card:hover .card-info{
-    transform: translateY(-85%);
+    transform: translateY(-89%);
 }
 .portafolio .cards .card .card-info{
     background-color:  #fff ;
@@ -258,7 +263,8 @@ header nav a:hover{
 .portafolio .cards .card .card-info > p{
     font-size: 1.2rem;
     text-align: center;
-    margin-bottom: .8rem ;
+    margin-bottom: .2rem ;
+    font-weight: 600;
 }
 .portafolio .cards .card .card-info .card-tecnology ul{
     list-style: none;
@@ -266,6 +272,7 @@ header nav a:hover{
 .portafolio .cards .card .card-info .card-tecnology ul li{
     display: flex;
     align-items: center;
+    font-weight: 400;
 }
 .bx{
     font-size: 2rem;
@@ -280,20 +287,22 @@ header nav a:hover{
     color:  #dce215;
 }
 .card-bottom{
-    width: 5rem;
+    width: 5.5rem;
     height: 2rem;
     border: none;
     background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: .8rem auto 0 auto;
+    margin: .5rem auto 0 auto;
     color: #fff;
+    border-radius: .2rem;
 }
 .card-bottom a{
       color: #fff;  
 }
 .portafolio .cards .card .card-info .card-description > p{
-    margin-top: .8rem;
+    margin-top: .4rem;
     text-align: center;
+    font-weight: 500;
 }
