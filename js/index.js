@@ -5,14 +5,31 @@ window.addEventListener("scroll", () => {
     let SectionSkill = d.querySelector("#habilidades");
     let distancia = SectionSkill.getBoundingClientRect().top;
 
-        const lineHhtml = d.querySelectorAll(".skill-level")[0];
-        const lineCss = d.querySelectorAll(".skill-level")[1];
-        const lineJavascript = d.querySelectorAll(".skill-level")[2];
-        const lineWebpack = d.querySelectorAll(".skill-level")[3];
+
         if(distancia <= windowHeight){
-            lineHhtml.style.animation="level-html 1.5s"
-            lineCss.style.animation="level-css 1.5s"
-            lineJavascript.style.animation="level-javascript 1.5s"
-            lineWebpack.style.animation="level-webpack 1.5s"
+
+            /**barra del nivel */
+            const lineHhtml = d.querySelector(".skill-level-html");
+            const lineCss = d.querySelector(".skill-level-css");
+            const lineJavascript = d.querySelector(".skill-level-javascript");
+            const lineWebpack = d.querySelector(".skill-level-webpack");
+
+            /**toolTip */
+            const toolTipHtml = d.querySelector(".level-percentage-html")
+            const toolTipCss = d.querySelector(".level-percentage-css");
+            const toolTipJavascript = d.querySelector(".level-percentage-javascript");
+            const toolTipWebpack = d.querySelector(".level-percentage-webpack");
+
+                lineHhtml.style.animation="level-html 1.5s";
+                toolTipHtml.style.animation="level-percentage-html 1.5s";
+
+                lineCss.style.animation="level-css 1.5s";
+                toolTipCss.style.animation="level-percentage-css 1.5s"; 
+
+                lineJavascript.style.animation="level-javascript 1.5s";
+                toolTipJavascript.style.animation="level-percentage-javascript 1.5s";
+
+                lineWebpack.style.animation="level-webpack 1.5s";
+                toolTipWebpack.style.animation="level-percentage-webpack 1.5s";
         }
 })
