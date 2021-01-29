@@ -31,10 +31,12 @@ window.addEventListener("scroll", () => {
                 lineWebpack.style.animation="level-webpack 1.5s";
                 toolTipWebpack.style.animation="level-percentage-webpack 1.5s";
         }
+
+        /**Seccion acerca de mi */
         if (aboutMe <= windowHeight) {
             let aboutMeText = d.querySelector(".acerca-de_text");
             let aboutMeImg = d.querySelector(".acerca-de_img");
-            aboutMeText.style.animation="acerca-text 1.5s";
-            aboutMeImg.style.animation="acerca-img 1.5s";
+            aboutMeText.classList.add("active")
+            aboutMeImg.classList.add("active")
         }
 })
