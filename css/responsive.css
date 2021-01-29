@@ -33,7 +33,7 @@
     }
     header nav a{
         color: #aaa;
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 4rem 0 0 0 ;
     }
     header nav a:nth-child(1){
@@ -91,5 +91,15 @@
     }
     .acerca-de .acerca-de_container-text .acerca-de_img {
         width: 55%;
+    }
+}
+@media (max-width: 404px){
+    .container-skills .skill .container-skill-level {
+        width: 230px;
+    }
+}
+@media (max-width: 318px){
+    .container-skills .skill .container-skill-level {
+        width: 190px;
     }
 }
