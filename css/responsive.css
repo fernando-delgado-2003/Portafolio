@@ -29,11 +29,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     header nav a{
         color: #aaa;
         font-size: 3rem;
+        margin: 4rem 0 0 0 ;
+    }
+    header nav a:nth-child(1){
+        margin: 0;
     }
     header .menu{
         display: block;
@@ -45,12 +49,16 @@
     header .menu i{
         color: #fff;
     }
+    .portafolio .cards {
+        grid-template-columns: repeat(2, minmax(250px, 280px));
+    }
 }
 @media (max-width: 1014px){
     .container-skills {
         width: 100%;
     }
 }
+
 @media (max-width: 740px){
     .hero .hero-info {
         width: 100%;
@@ -61,4 +69,22 @@
     .container-skills {
         width: 100%;
     }
+}
+@media (max-width: 600px){
+    .portafolio .cards {
+        grid-template-columns: repeat(1, minmax(250px, 280px));
+        gap: 3rem;
+    }
+    .acerca-de .acerca-de_container-text{
+        flex-direction: column;
+    }
+    .acerca-de .acerca-de_container-text .acerca-de_text{
+        width: 100%;
+    }
+    .acerca-de .acerca-de_container-text .acerca-de_img{
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 550px){
+    
 }
