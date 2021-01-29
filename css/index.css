@@ -29,11 +29,9 @@ header{
     align-items: center;
 
 }
-
 header h1 a{
     color: #fff;
 }
-
 header nav a{
     color: #fff;
     margin-left: 1.4rem;
@@ -43,20 +41,23 @@ header nav a:hover{
     color: #46a0f5;
 }
 
-header.sticky h1 a{
-    color: #000;
+header .menu{
+    display: none;
+    cursor: pointer;
 }
+
 /** banner o hero ***/
+
 .hero{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: calc(100vh - 3rem);
 
 }
 .hero .hero-info{
     overflow: hidden;
-    width: 40%;
+    width: 45%;
     text-align: center;
     position: relative;
     animation-name: mover-text;
@@ -125,7 +126,7 @@ header.sticky h1 a{
     z-index: 3;
 }
 .hero .hero-img{
-    width: 40%;
+    width: 45%;
 }
 .hero .hero-img img{
     width: 100%;
@@ -150,11 +151,12 @@ header.sticky h1 a{
     margin: 0 auto;
     margin-bottom: 4rem;
 }
-#habilidades > h2{
-    font-size: 2rem;
-}
 .container-skills{
     width: 50%;
+}
+.container-skills > h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 .container-skills .skill{
     padding-left: 3.2rem;
@@ -187,11 +189,9 @@ header.sticky h1 a{
 .container-skills .skill > p{
     font-size: .9rem;
     color: rgba(255, 255, 255, 0.69);
-    margin-bottom: 1rem;
-}
-.container-skills .skill:nth-child(3) > p{
     margin-bottom: 1.7rem;
 }
+
 /** barra blanca skill ***/
 .container-skills .skill .container-skill-level{
     width: 400px;
@@ -258,9 +258,9 @@ header.sticky h1 a{
 /*muestra el porcentaje en numero*/
 .container-skills .skill .container-skill-level .level-percentage {
     position: absolute;
-    top: -28px;
+    top: -24px;
     background-color: #1462f3;
-    font-size: .7rem;
+    font-size: .6rem;
     padding: .1rem .5rem;
 }
 .container-skills .skill .container-skill-level .level-percentage::before {
@@ -446,7 +446,7 @@ header.sticky h1 a{
 
 .acerca-de .acerca-de_container-text .acerca-de_img{
     width: 40%;
-    opacity: 0;
+    opacity:0;
     transform: translateX(100%);
 }
 /*Animacion*/
