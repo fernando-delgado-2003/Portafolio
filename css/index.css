@@ -427,7 +427,7 @@ header .menu{
 }
 
 .acerca-de .acerca-de_container-text .acerca-de_text{
-    width: 40%;
+    width: 50%;
     opacity: 0;
     transform: translateX(-100%);
 }
