@@ -86,5 +86,10 @@
     }
 }
 @media (max-width: 550px){
-    
+    .container-skills .skill .container-skill-level {
+        width: 300px;
+    }
+    .acerca-de .acerca-de_container-text .acerca-de_img {
+        width: 55%;
+    }
 }
