@@ -2,11 +2,10 @@ const d = document;
 
 window.addEventListener("scroll", () => {
     let windowHeight = window.innerHeight/1.3;
-    let SectionSkill = d.querySelector("#habilidades");
-    let distancia = SectionSkill.getBoundingClientRect().top;
+    let SectionSkill = d.querySelector("#habilidades").getBoundingClientRect().top;
+    let aboutMe = d.querySelector("#acerca-de").getBoundingClientRect().top;
 
-
-        if(distancia <= windowHeight){
+        if(SectionSkill <= windowHeight){
 
             /**barra del nivel */
             const lineHhtml = d.querySelector(".skill-level-html");
@@ -31,5 +30,11 @@ window.addEventListener("scroll", () => {
 
                 lineWebpack.style.animation="level-webpack 1.5s";
                 toolTipWebpack.style.animation="level-percentage-webpack 1.5s";
+        }
+        if (aboutMe <= windowHeight) {
+            let aboutMeText = d.querySelector(".acerca-de_text");
+            let aboutMeImg = d.querySelector(".acerca-de_img");
+            aboutMeText.style.animation="acerca-text 1.5s";
+            aboutMeImg.style.animation="acerca-img 1.5s";
         }
 })
