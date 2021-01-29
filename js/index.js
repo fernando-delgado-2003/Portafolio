@@ -1,5 +1,11 @@
 const d = document;
-
+const menu = d.querySelector("#menu");
+menu.addEventListener("click", ()=>{
+    const nav = d.querySelector("nav");
+    const header = d.querySelector("header");
+    header.classList.toggle("active");
+    nav.classList.toggle("active");
+})
 window.addEventListener("scroll", () => {
     let windowHeight = window.innerHeight/1.3;
     let SectionSkill = d.querySelector("#habilidades").getBoundingClientRect().top;
