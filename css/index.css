@@ -425,19 +425,17 @@ header.sticky h1 a{
     color: #fff;
     overflow: hidden;
 }
+
 .acerca-de .acerca-de_container-text .acerca-de_text{
     width: 40%;
+    opacity: 0;
+    transform: translateX(-100%);
 }
-
-@keyframes acerca-text{
-    from{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
+/*Animacion*/
+.acerca-de .acerca-de_container-text .acerca-de_text.active{
+    transition: 1.5s;
+    opacity: 1;
+    transform: translateX(0);    
 }
 
 .acerca-de .acerca-de_container-text .acerca-de_text span{
@@ -445,22 +443,22 @@ header.sticky h1 a{
     font-weight: 500;
     margin-bottom: .5rem;
 }
+
 .acerca-de .acerca-de_container-text .acerca-de_img{
     width: 40%;
+    opacity: 0;
+    transform: translateX(100%);
+}
+/*Animacion*/
+.acerca-de .acerca-de_container-text .acerca-de_img.active{
+    transition: 1.5s;
+    opacity: 1;
+    transform: translateX(0);
 }
 .acerca-de .acerca-de_container-text .acerca-de_img img{
     width: 100%;
 }
-@keyframes acerca-img{
-    from{
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+
 footer{
     display: flex;
     flex-direction: column;
