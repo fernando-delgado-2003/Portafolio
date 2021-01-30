@@ -5,11 +5,37 @@ menu.addEventListener("click", ()=>{
     const header = d.querySelector("header");
     header.classList.toggle("active");
     nav.classList.toggle("active");
+
+    let itemsMenu = d.querySelectorAll("nav a");
+    itemsMenu.forEach((item)=>{
+        item.addEventListener("click", ()=>{
+            header.classList.remove("active");
+            nav.classList.remove("active");
+        })
+    })
 })
+
+
+
 window.addEventListener("scroll", () => {
     let windowHeight = window.innerHeight/1.3;
     let SectionSkill = d.querySelector("#habilidades").getBoundingClientRect().top;
     let aboutMe = d.querySelector("#acerca-de").getBoundingClientRect().top;
+    let sections = d.querySelectorAll("section");
+        const header = d.querySelector("header");
+        let distanciaHeader = header.getBoundingClientRect().bottom;
+        if(window.pageYOffset){
+            sections.forEach((section)=>{
+                section.style.paddingTop="5rem"
+            })
+            header.classList.add("sticky");
+
+        }else{
+            sections.forEach((section)=>{
+                section.style.paddingTop="0"
+            })
+            header.classList.remove("sticky");
+        }
 
         if(SectionSkill <= windowHeight){
 

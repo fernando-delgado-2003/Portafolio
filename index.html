@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Fernando Delgado Bravo">
+    <meta name="description" content="Portafolio de un desarrollador front end">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, javaScript, portafolio, desarrollador web">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/responsive.css" media="(max-width: 1200px)">
@@ -12,32 +15,32 @@
 
 <body>
     <div class="container">
-        <header id="inicio">
+        <header>
             <h1><a href="index.html">Fernando</a></h1>
             <nav>
                 <a href="#inicio">Inicio</a>
-                <a href="#habilidades">skills</a>
+                <a href="#habilidades">Skills</a>
                 <a href="#portafolio">Portafolio</a>
                 <a href="#acerca-de">Acerca de mi</a>
             </nav>
             <div class="menu" id="menu">
-                <i class='bx bx-menu'></i>  
+                <i class='bx bx-menu'></i>
             </div>
-            
         </header>
         <main>
-            <div class="hero">
+            <section class="hero" id="inicio">
 
                 <div class="hero-info">
-                    <div class="line"></div>
                     <h2>Desarrollador Front end</h2>
-                    <a href="#portafolio" class="hero-button"><span>Protafolio</span></a>
-                    <a href="#acerca-de" class="hero-button"><span>Acerca de mi</span></a>
+                    <span class="hero_container-btns">
+                        <a href="#portafolio" class="hero-button"><span>Protafolio</span></a>
+                        <a href="#acerca-de" class="hero-button"><span>Acerca de mi</span></a>
+                    </span>
+
                 </div>
                 <div class="hero-img">
                     <img src="./img/undraw_programming_2svr.svg" alt="">
-                </div>
-            </div>
+                </section>
 
 
             <section id="habilidades">
@@ -200,8 +203,11 @@
                     <div class="acerca-de_text">
                         <span>Acerca de mi</span>
                         <p>
-                            Me presento me llamo Fernando soy de México, nací y vivo en Cancún, Quintana Roo. Actualmente tengo 17 años (casi los 18) llevó 1 año y medio de estudios de forma autodidacta para ser un buen desarrollador Front-end. 
-                            Soy un apasionado de las tecnologias webs y la web en general y lo que más me gusta de esto que siempre al algo nuevo que aprender.
+                            Me presento me llamo Fernando soy de México, nací y vivo en Cancún, Quintana Roo.
+                            Actualmente tengo 17 años (casi los 18) llevó 1 año y medio de estudios de forma autodidacta
+                            para ser un buen desarrollador Front-end.
+                            Soy un apasionado de las tecnologias webs y la web en general y lo que más me gusta de esto
+                            que siempre al algo nuevo que aprender.
                         </p>
                         <br>
                         <q>Nunca paraces de aprender</q>
@@ -211,15 +217,28 @@
                         <img src="./img/undraw_web_developer_p3e5.svg" alt="">
                     </div>
                 </div>
-
+            </section>
+            <section id="contacto" class="contact">
+                <h2>Contactos</h2>
+                <ul>
+                    <li>
+                        <i class='bx bxs-phone-call'></i> Numeró de telefono: <a href="tel:529982184312">+52 (998) 218 4312</a>
+                    </li>
+                    <li>
+                        <img src="./img/gmail.svg" alt="">Gmail:<a href="mailto:fernanbravo124@gmail.com ">fernanbravo124@gmail.com</a>
+                    </li>
+                    <li> 
+                        <a href="https://www.linkedin.com/in/fernando-delgado-bravo-2bb0a51b0/" class='bx bxl-linkedin-square' target="_BLANCK"></a>
+                        Linkedin
+                    </li>
+                </ul>
             </section>
         </main>
         <footer>
-            <a href="https://www.linkedin.com/in/fernando-delgado-bravo-2bb0a51b0/" class='bx bxl-linkedin-square' target="_BLANCK"></a>
             <span>Portafolio de fernando 2021</span>
         </footer>
     </div>
-
+    <script src="https://kit.fontawesome.com/a35662e283.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="./js/index.js"></script>
 </body>
