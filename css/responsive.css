@@ -49,6 +49,11 @@
     header .menu i{
         color: #fff;
     }
+    .hero .hero-info .hero_container-btns {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
     .portafolio .cards {
         grid-template-columns: repeat(2, minmax(250px, 280px));
     }

@@ -17,18 +17,25 @@ body{
 }
 .container{
     max-width: 1350px;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
-/** Header ***/
+/**  HEADER  *****************************/
 header{
     width: 100%;
     height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    transition: all 1s;
+    padding: 0 2rem;
 }
+header.sticky{
+    position: fixed;
+    background-color: #14131c;
+    z-index: 10;
+}
+
 header h1 a{
     color: #fff;
 }
@@ -46,13 +53,16 @@ header .menu{
     cursor: pointer;
 }
 
-/** banner o hero ***/
+/**  BABBER O HERO  *****************************/
 
 .hero{
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: calc(100vh - 3rem);
+    margin: auto;
+    padding-top: 3rem;
 
 }
 .hero .hero-info{
@@ -63,6 +73,7 @@ header .menu{
     animation-name: mover-text;
     animation-duration: 2s;
 }
+/** ANIMACION DEL TEXTO DEL HERO   *****************************/
 @keyframes mover-text{
     from{
         transform: translateX(-150%);
@@ -79,20 +90,20 @@ header .menu{
     animation-iteration-count: 1;
     animation-name: mover;
 }
-.hero .hero-info .hero-button{
+
+.hero .hero-info .hero_container-btns .hero-button{
     position: relative;
     display: inline-block;
     border: none;
     outline: none;
-    background: none;
     padding: 0.7rem;
-    margin: 2rem 0 0 1.1rem;
     font-size: 1.1rem;
     color: #fff;
     border: 2px solid #fff;
     transition: all .5s;
+    margin: 1rem 0 0 1rem;
 }
-.hero .hero-info .hero-button::before{
+.hero .hero-info .hero_container-btns .hero-button::before{
     content: '';
     position: absolute;
     top: 6px;
@@ -103,11 +114,11 @@ header .menu{
     transition: ease-in-out .5s;
     transform: scaleY(1);
 }
-.hero .hero-info .hero-button:hover:before{
+.hero .hero-info .hero_container-btns .hero-button:hover:before{
     transform: scaleY(0);
 
 }
-.hero .hero-info .hero-button::after {
+.hero .hero-info .hero_container-btns .hero-button::after {
     content: '';
     position: absolute;
     top: -6px;
@@ -118,10 +129,10 @@ header .menu{
     transition: ease-in-out .5s;
     transform: scaleX(1);
 }
-.hero .hero-info .hero-button:hover:after{
+.hero .hero-info .hero_container-btns .hero-button:hover:after{
     transform: scaleX(0);
 }
-.hero .hero-info .hero-button span{
+.hero .hero-info .hero_container-btns .hero-button span{
     position: relative;
     z-index: 3;
 }
@@ -133,7 +144,7 @@ header .menu{
     animation-duration: 3s;
     animation-name: opacidad-img;
 }
-/*animacion de la imagen del hero*/
+/**  ANIMACION DE LA IMAGEN DEL HERO  *****************************/
 @keyframes opacidad-img{
     from{
         opacity: 0;
@@ -146,10 +157,9 @@ header .menu{
 /** Skills ***/
 
 #habilidades{
-    width: 100%;
+    width: 90%;
     color: #fff;
     margin: 0 auto;
-    margin-bottom: 4rem;
 }
 .container-skills{
     width: 50%;
@@ -163,7 +173,7 @@ header .menu{
     position: relative; 
     margin-bottom: 1rem;   
 }
-/** Logo skill ***/
+/**  LOGOS DE LAS SKILLS  *****************************/
 .container-skills .skill .skill-logo {
     width: 2.5rem;
     height: 2.5rem;
@@ -192,7 +202,7 @@ header .menu{
     margin-bottom: 1.7rem;
 }
 
-/** barra blanca skill ***/
+/** BARRA BLANCLA DE SKILLS ***/
 .container-skills .skill .container-skill-level{
     width: 400px;
     height: .4rem;
@@ -201,14 +211,14 @@ header .menu{
     margin-top: .4rem;
     position: relative;
 }
-/** barra azul skill (El porcentaje) para cada tecnologia ***/
+/**  BARRA AZUL DE SKILLS  *****************************/
 .container-skills .skill .container-skill-level .skill-level{
         height: 100%;
         background: rgb(70,160,245);
         background: linear-gradient(90deg, rgba(70,160,245,1) 24%, rgba(32,101,173,1) 73%);    
         border-radius: .4rem;
 }
-/** añaniendo el tamaño de la barra azul por separado ***/
+
 
 .container-skills .skill .container-skill-level .skill-level-html{
     width: 60%;
@@ -222,7 +232,7 @@ header .menu{
 .container-skills .skill .container-skill-level .skill-level-webpack{
     width: 40%;
 }
-/*Animaciones Level*/
+/**  ANIMACIONES DE LAS ANIMACIONES DEL NIVEL  *****************************/
 @keyframes level-html{
     from{
         width: 0%;
@@ -255,7 +265,6 @@ header .menu{
         width: 40%;
     }
 }
-/*muestra el porcentaje en numero*/
 .container-skills .skill .container-skill-level .level-percentage {
     position: absolute;
     top: -24px;
@@ -286,7 +295,7 @@ header .menu{
 .container-skills .skill .container-skill-level .level-percentage-webpack{
     left: calc(40% - 33.65px);
 }
-/*Animaciones tooltips*/
+/**  ANIMACIONES DE LAS TOOLTIPS  *****************************/
 @keyframes level-percentage-html{
     from{
         left: 0;
@@ -322,8 +331,14 @@ header .menu{
 .container-skills .skill:nth-child(3) > p{
     margin-bottom: 1.7rem;
 }
+
+
+/*** PORTAFOLIO ***********************/
+
+
 .portafolio{
-    margin-bottom: 3rem;
+    width: 90%;
+    margin: 0 auto;
 }
 .portafolio > h2{
     color: #fff;
@@ -413,6 +428,10 @@ header .menu{
     text-align: center;
     font-weight: 500;
 }
+.acerca-de{
+    width: 90%;
+    margin: 0 auto;
+}
 .acerca-de .acerca-de_heading h2{
     text-align: center;
     color: #fff;
@@ -431,13 +450,12 @@ header .menu{
     opacity: 0;
     transform: translateX(-100%);
 }
-/*Animacion*/
+/**  ANIMACION DEL TEXTO DE LA SECCION ACERCA DE MI   *****************************/
 .acerca-de .acerca-de_container-text .acerca-de_text.active{
     transition: 1.5s;
     opacity: 1;
     transform: translateX(0);    
 }
-
 .acerca-de .acerca-de_container-text .acerca-de_text span{
     font-size: 1.6rem;
     font-weight: 500;
@@ -449,7 +467,7 @@ header .menu{
     opacity:0;
     transform: translateX(100%);
 }
-/*Animacion*/
+/**   ANIMACION DE LA IMAGEN DE LA SECCION ACERCA DE MI   *****************************/
 .acerca-de .acerca-de_container-text .acerca-de_img.active{
     transition: 1.5s;
     opacity: 1;
@@ -458,7 +476,35 @@ header .menu{
 .acerca-de .acerca-de_container-text .acerca-de_img img{
     width: 100%;
 }
+/**  CONTACTO  *****************************/
 
+.contact > h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+.contact ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: .7rem;
+}
+.contact ul li a{
+    color: #fff;
+    margin-left: .2rem;
+}
+.contact ul li i{
+    font-size: 1.8rem;
+    margin-right: .4rem;
+}
+.contact ul li img{
+    width: 1.8rem;
+    margin-right: .4rem;
+}
+
+/**  FOOTER  *****************************/
 footer{
     display: flex;
     flex-direction: column;
@@ -467,8 +513,4 @@ footer{
     color: #fff;
     margin-top: 3rem;
     text-transform: uppercase;
-}
-footer a{
-    color: #fff;
-    cursor: pointer;
 }
