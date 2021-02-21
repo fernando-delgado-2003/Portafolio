@@ -65,7 +65,6 @@ header .menu{
     align-items: center;
     height: calc(100vh - 3rem);
     margin: auto;
-    padding-top: 3rem;
 
 }
 .hero .hero-info{
@@ -163,9 +162,11 @@ header .menu{
     width: 90%;
     color: #fff;
     margin: 0 auto;
+
 }
 .container-skills{
     width: 50%;
+        padding-top: 5.5rem;
 }
 .container-skills > h2{
     font-size: 2rem;
@@ -342,6 +343,7 @@ header .menu{
 .portafolio{
     width: 90%;
     margin: 10px auto 0 auto;
+    padding-top: 5rem;
 }
 .portafolio > h2{
     color: #fff;
@@ -434,6 +436,7 @@ header .menu{
 .acerca-de{
     width: 90%;
     margin: 0 auto;
+    padding-top: 5rem;
 }
 .acerca-de .acerca-de_heading h2{
     text-align: center;
@@ -500,7 +503,7 @@ background-color: #58aeff;
 }
 /**  CONTACTO  *****************************/
 .contact{
- 
+    padding-top: 5rem;
 }
 .contact > h2{
     text-align: center;
