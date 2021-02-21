@@ -469,6 +469,9 @@ header .menu{
 .acerca-de .acerca-de_container-text .acerca-de_text > a:hover{
 background-color: #58aeff;
 }
+.acerca-de .acerca-de_container-text .acerca-de_text .cv-mobile{
+    display: none;
+}
 /**  ANIMACION DEL TEXTO DE LA SECCION ACERCA DE MI   *****************************/
 .acerca-de .acerca-de_container-text .acerca-de_text.active{
     transition: 1.5s;

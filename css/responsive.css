@@ -57,6 +57,12 @@
     .portafolio .cards {
         grid-template-columns: repeat(2, minmax(250px, 280px));
     }
+    .acerca-de .acerca-de_container-text .acerca-de_text .cv-mobile{
+        display: flex;
+    }
+    .acerca-de .acerca-de_container-text .acerca-de_text .cv-desktop{
+        display: none;
+    }
 }
 @media (max-width: 1014px){
     .container-skills {
