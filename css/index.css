@@ -453,6 +453,22 @@ header .menu{
     opacity: 0;
     transform: translateX(-100%);
 }
+.acerca-de .acerca-de_container-text .acerca-de_text > a{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5rem;
+    height: 2.5rem;
+    background-color: #2c99ef;
+    border-radius: .3rem;
+    margin-top: 1rem;
+    transition: all 500ms;
+
+}
+.acerca-de .acerca-de_container-text .acerca-de_text > a:hover{
+background-color: #58aeff;
+}
 /**  ANIMACION DEL TEXTO DE LA SECCION ACERCA DE MI   *****************************/
 .acerca-de .acerca-de_container-text .acerca-de_text.active{
     transition: 1.5s;
